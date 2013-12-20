@@ -6,7 +6,7 @@
     } else {
 		if (typeof define === 'function' && define.amd) {
 			// AMD. Register as named module.
-			define(['Handlebars', 'i18next'], factory);
+			define(['hbs/handlebars', 'i18next'], factory);
 		} else {
 			// Browser globals.
 			factory(Handlebars,i18n);

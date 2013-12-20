@@ -1,6 +1,6 @@
 {
   "name": "amdblah-hbs-helpers",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A small collection of Handlebars helpers run in both the server(nodejs) and client(browser).",
   "author": "hsfeng <hsfeng@gmail.com>",
   "keywords": [

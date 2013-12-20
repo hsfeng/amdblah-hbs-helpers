@@ -6,7 +6,7 @@
     } else {
 		if (typeof define === 'function' && define.amd) {
 			// AMD. Register as named module.
-			define(['Handlebars'], factory);
+			define(['hbs/handlebars'], factory);
 		} else {
 			// Browser globals.
 			factory(Handlebars);
