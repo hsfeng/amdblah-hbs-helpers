@@ -11,9 +11,9 @@
     "requirejs"
   ],
   "dependencies": {
-    "handlebars": "~1.0.12",
+    "handlebars": "~1.3.0",
     "i18next": "~1.7.1",
-    "moment": "~2.2.1",
+    "moment": "~2.5.1",
     "require-all": "0.0.8"
   },
   "devDependencies": {
