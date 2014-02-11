@@ -39,7 +39,7 @@ require.config({
 	}
 	'hbs' : {
 		…		
-		disableHelpers : false,
+		helpers : true,
 		helperDirectory : 'hbs.helpers/'
 	}
 	...
