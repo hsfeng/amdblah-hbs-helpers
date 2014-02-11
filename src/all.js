@@ -10,8 +10,8 @@ Sucks. I know.
 (function (factory) {
 	'use strict';
 	if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-		require('require-all')(__dirname);
-		module.exports = factory();
+		module.exports = require('require-all')(__dirname);
+		//module.exports = factory();
     } else {
 		if (typeof define === 'function' && define.amd) {
 			// AMD. Register as anonymous module.
