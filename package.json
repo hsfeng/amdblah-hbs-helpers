@@ -1,6 +1,6 @@
 {
   "name": "amdblah-hbs-helpers",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A small collection of Handlebars helpers run in both the server(nodejs) and client(browser).",
   "author": "hsfeng <hsfeng@gmail.com>",
   "keywords": [
@@ -17,7 +17,7 @@
     "require-all": "0.0.8"
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
+    "grunt": "~0.4.2",
     "matchdep": "~0.1.2",
     "grunt-contrib-clean": "0.4.0",
     "grunt-contrib-jshint": "0.6.3",
