@@ -104,21 +104,27 @@ Format a datetime in milliseconds using [Moment.js](http://momentjs.com/)
 Display formatted datetime:
 
 ```
-{{dateFormat datetime format="MMMM YYYY"}
+{{dateFormat datetime format="MMMM YYYY" timezone=timezoneOffset}
 ```
 Display time from now 
 
 ```
-{{dateFormat datetime fromNow=true}}
+{{dateFormat datetime fromNow=true timezone=timezoneOffset}}
 ```
 
 Pass local moment into helper in nodejs
 
 ```
-{{dateFormat datetime format="MMMM YYYY" moment=momentObj}
-{{dateFormat datetime fromNow=true moment=momentObj}}
+{{dateFormat datetime format="MMMM YYYY" moment=momentObj timezone=timezoneOffset}
+{{dateFormat datetime fromNow=true moment=momentObj timezone=timezoneOffset}}
 ```
 Refer to the moment middleware in express.js.
+
+
+## Release History
+
+ * 2014-06-04   v0.1.2   dateFormat timezone support
+
 
 
 # License

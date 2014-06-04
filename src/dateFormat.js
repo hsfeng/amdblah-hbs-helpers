@@ -20,14 +20,16 @@
 	 * moment syntax example: moment(Date("2011-07-18T15:50:52")).format("MMMM YYYY")
 	 * usage: 
 	 *		display formatted datetime
-	 *			{{dateFormat datetime format="MMMM YYYY"}
+	 *			{{dateFormat datetime format="MMMM YYYY" timezone=timezoneOffset}
 	 *		display timetime from now 
-	 *			{{dateFormat datetime fromNow=true}}
+	 *			{{dateFormat datetime fromNow=true timezone=timezoneOffset}}
 	 *
 	 *		pass local moment into helper in nodejs
-	 *			{{dateFormat datetime format="MMMM YYYY" moment=momentObj}
-	 *			{{dateFormat datetime fromNow=true moment=momentObj}}
+	 *			{{dateFormat datetime format="MMMM YYYY" moment=momentObj timezone=timezoneOffset}
+	 *			{{dateFormat datetime fromNow=true moment=momentObj timezone=timezoneOffset}}
 	 *		reference the moment middleware.
+	 * 
+	 * timezoneOffset format: +00:00 +0000 -00:00 -0000
 	 */
 	var result = function(context, block) {
 		var m,f = block.hash.format || 'MMM Do, YYYY';
@@ -36,6 +38,11 @@
 		}else{
 			m = moment(context);
 		}
+		
+		if(block.hash.timezone !== undefined){
+			m.zone(block.hash.timezone);
+		}
+		
 		if (m) {
 			if(block.hash.fromNow){
 				return m.fromNow();
