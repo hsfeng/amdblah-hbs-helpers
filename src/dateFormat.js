@@ -34,7 +34,7 @@
 	var result = function(context, block) {
 		var m,f = block.hash.format || 'MMM Do, YYYY';
 		if(block.hash.moment !== undefined) {
-			m = block.hash.moment.obj(context).lang(block.hash.moment.lang);
+			m = block.hash.moment.obj(context).locale(block.hash.moment.lang);
 		}else{
 			m = moment(context);
 		}

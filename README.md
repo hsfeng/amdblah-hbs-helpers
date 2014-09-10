@@ -38,7 +38,7 @@ require.config({
 		...
 	}
 	'hbs' : {
-		…		
+		…
 		helpers : true,
 		helperDirectory : 'hbs.helpers/'
 	}
@@ -106,7 +106,7 @@ Display formatted datetime:
 ```
 {{dateFormat datetime format="MMMM YYYY" timezone=timezoneOffset}
 ```
-Display time from now 
+Display time from now
 
 ```
 {{dateFormat datetime fromNow=true timezone=timezoneOffset}}
@@ -123,7 +123,8 @@ Refer to the moment middleware in express.js.
 
 ## Release History
 
- * 2014-06-04   v0.1.2   dateFormat timezone support
+* 2014-09-10   v0.2.0   Update moment.js to version 2.8.x
+* 2014-06-04   v0.1.2   dateFormat timezone support
 
 
 
