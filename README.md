@@ -80,7 +80,7 @@ Pass local i18next into helper in nodejs
 {{#i18n_tr "your_key" add="from helper" }}
 h6 Some Text
 p some paragraph with variable __add__ __addFromContext__
-{/i18n_tr}
+{{/i18n_tr}}
 ```
 
 Pass local i18next into helper in nodejs
@@ -89,7 +89,7 @@ Pass local i18next into helper in nodejs
 {{#i18n_tr "your_key" add="from helper" i18next=i18nextObj}}
 h6 Some Text
 p some paragraph with variable __add__ __addFromContext__
-{/i18n_tr}
+{{/i18n_tr}}
 ```
 
 
@@ -104,7 +104,7 @@ Format a datetime in milliseconds using [Moment.js](http://momentjs.com/)
 Display formatted datetime:
 
 ```
-{{dateFormat datetime format="MMMM YYYY" timezone=timezoneOffset}
+{{dateFormat datetime format="MMMM YYYY" timezone=timezoneOffset}}
 ```
 Display time from now
 
@@ -115,7 +115,7 @@ Display time from now
 Pass local moment into helper in nodejs
 
 ```
-{{dateFormat datetime format="MMMM YYYY" moment=momentObj timezone=timezoneOffset}
+{{dateFormat datetime format="MMMM YYYY" moment=momentObj timezone=timezoneOffset}}
 {{dateFormat datetime fromNow=true moment=momentObj timezone=timezoneOffset}}
 ```
 Refer to the moment middleware in express.js.
